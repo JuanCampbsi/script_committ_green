@@ -20,11 +20,11 @@ _() {
   git branch -M main
   git push -u origin main -f
 
-  for year in $(seq $YEAR 1 2021)
+  for year in $(seq $YEAR 1 2022)
     do
     git checkout -b "$year-commit"
 
-        for month in $(seq 1 1 12)
+        for month in $(seq 1 1 08)
           do
 
             for day in $(seq 1 1 31)
