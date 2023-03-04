@@ -7,7 +7,7 @@ _() {
   echo "GitHub Access token: "
   read -r ACCESS_TOKEN
 
-  YEAR="2018"
+  YEAR="2022"
 
   [ -z "$USERNAME" ] && exit 1
   [ -z "$ACCESS_TOKEN" ] && exit 1  
@@ -20,11 +20,11 @@ _() {
   git branch -M main
   git push -u origin main -f
 
-  for year in $(seq $YEAR 1 2023)
+  for year in $(seq $YEAR 1 2022)
     do
     git checkout -b "$year-commit"
 
-        for month in $(seq 1 1 02)
+        for month in $(seq 1 1 12)
           do
 
             for day in $(seq 1 1 31)
